@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Seciones bergas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #lalala{
+                margin-top: 170px;
+                font-family: "Times New Roman";
+            }
+            #titulo{
+                font-size: 40px;
+                color: #BA2626;
+            }
+            p{
+                font-size: 20px;
+                color: #26A4BA;
+            }
+            .nunu{
+                font-family: Verdana;
+                border-radius: 4px;
+            }
+            .but{
+                color: #ffffff;
+                background-color: #3a7999;
+                width: 300px;
+                height: 30px;
+                border-radius: 15px;
+            }
+            .but:hover {
+                background: rgba(0,0,0,0);
+                color: #3a7999;
+                box-shadow: inset 0 0 0 3px #3a7999;
+            }
+
+        </style>
+    </head>
+    <body>
+    <center>
+        <div id="lalala">
+            <div id="titulo">Vamos a ver quien eres:</div>
+            <br><br>
+            <form method="Post" action="obtenerSeciones">
+                <p>Escribe tu nombre plox:</p>
+                <input class="nunu" type="text" placeholder="Nombre" required name="nombre">
+                <p>Escribe tu apellido:</p>
+                <input class="nunu" type="text" placeholder="Apellido" required name="apellido">
+                <br><br>
+                <input class="but" type="submit" value="checar">
+            </form>
+        </div>
+    </center>
+</body>
+</html>
