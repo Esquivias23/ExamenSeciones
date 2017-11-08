@@ -46,18 +46,18 @@ public class validaSesiones extends HttpServlet {
             out.println("<br>");
             out.println("<h3>Bienvenido</h3>");
             out.println("<br>");
-            out.println("ID de la sesi&oacute;n JSESSIONID: " + sesion.getId());
+            out.println("ID de la sesión: " + sesion.getId());
+            out.println("<br>");
+            out.println("<a href=\"/SecionesE/calculadora.html\" >Ve a la calculadora</a>");
             out.println("<br>");
             out.println(claveSesion);
-            out.println("<br>");
-            out.println("Fernando Adrian Jimenez Esquivias");
             out.println("</center>");
         } else {
             PrintWriter out = response.getWriter();
             out.println("<center style='margin-top: 200px; font-size: 20px; font-family: Verdana;'>");
             out.println("<h3>tienes un error</h3>");
             out.println("<br>");
-            out.println("ID de la sesi&oacute;n JSESSIONID: " + sesion.getId());
+            out.println("ID de la sesión: " + sesion.getId());
             out.println("<br>");
             out.println(claveSesion);
             out.println("<br>");

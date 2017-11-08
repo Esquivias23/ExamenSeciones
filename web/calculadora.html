@@ -9,8 +9,41 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .body{
+                margin-top: 170px;
+                font-family: Verdana;
+            }
+            .titulo{
+                font-size: 45px;
+                color: #BA2626;
+            }
+            .nunu{
+                border-radius: 4px;
+            }
+            .but{
+                color: #ffffff;
+                background-color: #3a7999;
+                width: 300px;
+                height: 30px;
+                border-radius: 15px;
+            }
+            .but:hover {
+                background: rgba(0,0,0,0);
+                color: #3a7999;
+                box-shadow: inset 0 0 0 3px #3a7999;
+            }
+        </style>
     </head>
     <body>
-        <div>Esta iba a ser la calculadora</div>
+    <center class="body">
+        <div class="titulo">Esta es la calculadora</div>
+        <br><br>
+        <form action="Calcular" method="get">
+            <input class="nunu" type="text" name="num1" placeholder="numero1" required> + <input class="nunu" type="text" name="num2" placeholder="numero2" required>
+            <br><br>
+            <input class="but" type="submit" value="Calcular">
+        </form>
+    </center>
     </body>
 </html>
